@@ -1,0 +1,24 @@
+// -----------Why our agency-------------
+
+.why-our-agency {
+	display: flex;
+	justify-content: space-between;
+	padding: 13rem 0;
+
+	&_col-1 {
+		flex-basis: 55%;
+	}
+
+	&_col-2 {
+		flex-basis: 35%;
+	}
+
+	p {
+		margin: 20px 0;
+	}
+
+	button {
+		margin-top: 4.5rem;
+		color: $--white;
+	}
+}

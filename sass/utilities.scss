@@ -1,0 +1,122 @@
+@import "color";
+
+:root {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.wrap-page {
+	width: 1300px;
+    margin: auto;
+}
+
+// ------buttons-------
+
+.btn {
+	border-radius: 2rem;
+	padding: 1rem 1.6rem;
+	font-size: 1.3rem;
+}
+
+.btn-primary {
+	background-color: $--primary;
+	border: 1px solid $--primary;
+	cursor: pointer;
+}
+
+.btn-primary:hover {
+	background-color: $--white;
+	color: $--primary;
+}
+
+.btn-download {
+	padding: 10px 18px;
+	background-color: $--primary;
+	cursor: pointer;
+	color: $--orange;
+	font-size : 1rem;
+	margin-left: 2rem;
+}
+
+.btn-how-we-work {
+	outline: none;
+	background: $--primary;
+	color: $--white;
+	cursor: pointer;
+}
+
+.btn-contact-us {
+	border: 1px solid $--primary;
+	outline: none;
+	background: $--white;
+	color: $--primary;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.btn-contact-us:hover {
+	background: $--primary;
+	color: $--white;
+}
+
+// ---------Arrow symbol------------
+
+.arrow-symbol {
+	position: relative;
+	padding-right: 15px;
+}
+
+.arrow-symbol:after {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+    content: "\276D";
+    font-size: 10px;
+    transform: rotate(90deg);
+}
+
+
+// ---------Styles Heading------------
+
+.sub-heading {
+	background-color: $--subHeading;
+	font-size: 15px;
+	padding: 6px 12px;
+	color: $--orange;
+}
+
+.main-heading {
+	color: $--primary;
+	font-size: 2.4em;
+	margin: 10px 0 20px;
+}
+
+.extra-title {
+	margin: 15px 0;
+}
+
+// --------Style Text----------
+
+.text {
+	 color: $--text;
+	 font-size: 16px;
+	 line-height: 1.2;
+}
+
+.our-features_text {
+	max-width: 500px;
+	margin: auto;
+}
+
+// --------Style Icons-------
+
+.font-icons {
+	font-size: 50px;
+	color: $--text;
+}
+

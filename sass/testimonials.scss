@@ -1,0 +1,75 @@
+// Testimonials
+
+.testimonials {
+	background-color: $--testimonials-bg;
+
+	&_row-1 {
+		text-align: center;
+		padding-top: 6rem;
+
+		p {
+			max-width : 800px;
+			margin: 0 auto;
+		}
+	}
+
+	&_row-2 {
+
+		padding : 4rem;
+
+		.wrap-slider {
+			max-width: 80%;
+			margin: 0 auto;
+		}
+
+		&_review {
+			background-color: $--white;
+			border-radius: 10px;
+			margin: 0 5px;
+			padding: 3rem;
+			border: 1px solid rgba(168, 173, 170,.5);
+
+			&:hover {
+				border: 1px solid $--text;
+			}
+
+			&_text {
+
+				blockquote {
+					background-color: $--white;
+					font-size: 1.3rem;
+					line-height: 1.3;
+					margin: 0;
+					color : $--text;
+				}
+			}
+
+			&_author {
+				display: flex;
+				margin: 20px 0 0;
+
+				&_img {
+					margin-right: 20px;
+
+					img {
+						border-radius : 50%;
+					}
+				}
+
+				&_info {
+
+					h3 {
+						margin: 0;
+						font-weight : 100;
+					}
+
+					p {
+						margin : 5px 0 0;
+					}
+					
+				}
+			}
+
+		}
+	}
+}

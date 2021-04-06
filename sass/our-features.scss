@@ -1,0 +1,37 @@
+// Our features 
+@import "color";
+
+.our-features {
+	text-align: center;
+
+	&_row-2 {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 50px;
+		padding: 0 4rem;
+
+		&_col-1 {
+
+			&_icons {
+				position: relative;
+				padding-top: 10px;
+
+				&::before {
+					position: absolute;
+					content: "";
+					width: 40px;
+					height: 40px;
+					background-color:  $--icon-effect;
+					border-radius: 50%;
+					right: 42%;
+					top: 0%;
+				}
+			}
+		}
+
+		p {
+			max-width: 300px;
+		}
+	}
+}
+

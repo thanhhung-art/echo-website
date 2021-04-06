@@ -1,0 +1,56 @@
+// Our services
+@import "color";
+
+.our-services {
+	padding-bottom: 6rem;
+
+	&_row-1 {
+		text-align: center;
+	}
+
+	&_row-2 {
+		padding: 3.5rem 12rem 0;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 30px;
+
+		&_wrap-describe {
+			display: flex;
+			border: 1px solid rgba(197, 204, 214,.5);
+			border-radius: 5px;
+			padding: 1.5rem 1.5rem 1.5rem 0;
+
+			&_col-1 {
+				position: relative;
+
+				i {
+					padding: 2rem 1.8rem 0;
+				}
+
+				&::before {
+				position: absolute;
+				content: "";
+				width: 40px;
+				height: 40px;
+				background-color:  $--icon-effect;
+				border-radius: 50%;
+				right: 25%;
+				top: 14%;
+			}
+
+			&_col-2 {
+
+				h4 {
+					margin: 15px 0 5px;
+					font-weight : bold;
+					font-size : 2rem;
+				}
+
+				p {
+					margin: 0 ;
+				}
+			}
+		}
+	}
+}
+}

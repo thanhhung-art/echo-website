@@ -1,8 +1,10 @@
-@import "color";
 
-.wrapper {
-    width: 1300px;
-    background-color: $--red;
-    margin: auto;
-    height: 300px;
-}
+
+@import "utilities";
+@import "header";
+@import "our-features";
+@import "why-our-agency";
+@import "our-services";
+@import "testimonials";
+@import "footer";
+@import "responsive";
