@@ -5,10 +5,64 @@
 		font-size: 18px;
 	}
 
-	body {
-		padding: 1rem;
+	.wrap-page {
+		max-width: 100%;
+		padding: 0 1rem;
+	}
+
+	// style-btn
+
+	.btn {
+	padding: 1rem 1.6rem;
+	font-size: 1rem;
+	}
+
+	.btn-primary {
+		background-color: $--primary;
+		border: 1px solid $--primary;
+		cursor: pointer;
+	}
+
+	.btn-primary:hover {
+		background-color: $--white;
+		color: $--primary;
+	}
+
+	.btn-how-we-work {
+		outline: none;
+		background: $--primary;
+		color: $--white;
+		cursor: pointer;
+	}
+
+	.btn-contact-us {
+		border: 1px solid $--primary;
+		outline: none;
+		background: $--white;
+		color: $--primary;
+		margin-left: 10px;
+		cursor: pointer;
+	}
+
+	.btn-contact-us:hover {
+		background: $--primary;
+		color: $--white;
+	}
+
+
+	// style-heading
+
+	.sub-heading {
+	padding: .4rem 1rem;
+	font-size: .7rem;
+	}
+
+	.main-heading {
+		font-size: 1.9rem;
 	}
 	
+	// 
+		
 	.navbar {
 
 		&_menu {
@@ -20,15 +74,17 @@
 	}
 
 	.header {
+		padding-top: 2rem;
 
 		&_content {
 			flex-direction: column;
-			display: block;
 			transform: none;
 			position: static;
+			margin: 5rem 0;
 
 			&_left {
 				flex-basis: 100%;
+				padding: 0;
 			}
 
 			&_right {
@@ -38,26 +94,112 @@
 	}
 
 	.our-features {
-
+		margin-top: 2rem;
+	
 		&_row-2 {
 			flex-direction: column;
-			margin-top: 10rem;
+			margin-top: 50px;
+			padding: 0;
+
+			&_col {
+
+				&-1 {
+					margin-top: 1rem;
+				}
+
+				&-2 {
+					margin-top: 1rem;
+				}
+
+				&-3 {
+					margin-top: 1rem;
+				}
+			}
+
+
+			p {
+				max-width: 300px;
+			}
 		}
 	}
 
 	.why-our-agency {
-		flex-direction: column;
+	flex-direction: column;
+	padding: 7rem 0;
+
+		&_col-1 {
+			flex-basis: 100%;
+		}
+
+		&_col-2 {
+			flex-basis: 100%;
+		}
+
+		button {
+			margin-top: 2rem;
+		}
 	}
 
 	.our-services {
 
 		&_row-2 {
+			padding: 1rem 0 0;
 			grid-template-columns: auto;
 		}
 	}
 
-	.testimonials {
 
+	.testimonials {
+		width: 100%;
+
+		&_row-2 {
+
+			padding: 4rem 0;
+
+			.wrap-slider {
+				width: 100%;
+				margin: 0;
+			}
+
+			&_review {
+				padding: 3rem 1rem;
+
+				&_text {
+
+					blockquote {
+						font-size: .7;
+						line-height: 1;
+					}
+				}
+
+				&_author {
+					display: flex;
+					margin: 20px 0 0;
+
+					&_img {
+						margin-right: 20px;
+
+						img {
+							border-radius : 50%;
+						}
+					}
+
+					&_info {
+
+						h3 {
+							margin: 0;
+							font-weight : 100;
+						}
+
+						p {
+							margin : 5px 0 0;
+						}
+						
+					}
+				}
+
+			}
+		}
 	}
 
 	.footer {

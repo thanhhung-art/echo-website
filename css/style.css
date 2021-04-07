@@ -313,25 +313,102 @@ body {
 @media screen and (max-width: 600px) {
   :root {
     font-size: 18px; }
-  body {
-    padding: 1rem; }
+  .wrap-page {
+    max-width: 100%;
+    padding: 0 1rem; }
+  .btn {
+    padding: 1rem 1.6rem;
+    font-size: 1rem; }
+  .btn-primary {
+    background-color: #081158;
+    border: 1px solid #081158;
+    cursor: pointer; }
+  .btn-primary:hover {
+    background-color: #fff;
+    color: #081158; }
+  .btn-how-we-work {
+    outline: none;
+    background: #081158;
+    color: #fff;
+    cursor: pointer; }
+  .btn-contact-us {
+    border: 1px solid #081158;
+    outline: none;
+    background: #fff;
+    color: #081158;
+    margin-left: 10px;
+    cursor: pointer; }
+  .btn-contact-us:hover {
+    background: #081158;
+    color: #fff; }
+  .sub-heading {
+    padding: .4rem 1rem;
+    font-size: .7rem; }
+  .main-heading {
+    font-size: 1.9rem; }
   .navbar_menu_links {
     display: none; }
-  .header_content {
-    flex-direction: column;
-    display: block;
-    transform: none;
-    position: static; }
-    .header_content_left {
-      flex-basis: 100%; }
-    .header_content_right {
-      flex-basis: 100%; }
-  .our-features_row-2 {
-    flex-direction: column;
-    margin-top: 10rem; }
+  .header {
+    padding-top: 2rem; }
+    .header_content {
+      flex-direction: column;
+      transform: none;
+      position: static;
+      margin: 5rem 0; }
+      .header_content_left {
+        flex-basis: 100%;
+        padding: 0; }
+      .header_content_right {
+        flex-basis: 100%; }
+  .our-features {
+    margin-top: 2rem; }
+    .our-features_row-2 {
+      flex-direction: column;
+      margin-top: 50px;
+      padding: 0; }
+      .our-features_row-2_col-1 {
+        margin-top: 1rem; }
+      .our-features_row-2_col-2 {
+        margin-top: 1rem; }
+      .our-features_row-2_col-3 {
+        margin-top: 1rem; }
+      .our-features_row-2 p {
+        max-width: 300px; }
   .why-our-agency {
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 7rem 0; }
+    .why-our-agency_col-1 {
+      flex-basis: 100%; }
+    .why-our-agency_col-2 {
+      flex-basis: 100%; }
+    .why-our-agency button {
+      margin-top: 2rem; }
   .our-services_row-2 {
+    padding: 1rem 0 0;
     grid-template-columns: auto; }
+  .testimonials {
+    width: 100%; }
+    .testimonials_row-2 {
+      padding: 4rem 0; }
+      .testimonials_row-2 .wrap-slider {
+        width: 100%;
+        margin: 0; }
+      .testimonials_row-2_review {
+        padding: 3rem 1rem; }
+        .testimonials_row-2_review_text blockquote {
+          font-size: .7;
+          line-height: 1; }
+        .testimonials_row-2_review_author {
+          display: flex;
+          margin: 20px 0 0; }
+          .testimonials_row-2_review_author_img {
+            margin-right: 20px; }
+            .testimonials_row-2_review_author_img img {
+              border-radius: 50%; }
+          .testimonials_row-2_review_author_info h3 {
+            margin: 0;
+            font-weight: 100; }
+          .testimonials_row-2_review_author_info p {
+            margin: 5px 0 0; }
   .footer_row-1 {
     flex-direction: column; } }
