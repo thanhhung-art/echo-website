@@ -17,36 +17,8 @@
 	font-size: 1rem;
 	}
 
-	.btn-primary {
-		background-color: $--primary;
-		border: 1px solid $--primary;
-		cursor: pointer;
-	}
-
-	.btn-primary:hover {
-		background-color: $--white;
-		color: $--primary;
-	}
-
-	.btn-how-we-work {
-		outline: none;
-		background: $--primary;
-		color: $--white;
-		cursor: pointer;
-	}
-
 	.btn-contact-us {
-		border: 1px solid $--primary;
-		outline: none;
-		background: $--white;
-		color: $--primary;
 		margin-left: 10px;
-		cursor: pointer;
-	}
-
-	.btn-contact-us:hover {
-		background: $--primary;
-		color: $--white;
 	}
 
 
@@ -61,7 +33,7 @@
 		font-size: 1.9rem;
 	}
 	
-	// 
+	// navbar
 		
 	.navbar {
 
@@ -72,6 +44,8 @@
 			}
 		}
 	}
+
+	// header
 
 	.header {
 		padding-top: 2rem;
@@ -93,26 +67,28 @@
 		}
 	}
 
+	// our features
+
 	.our-features {
 		margin-top: 2rem;
 	
 		&_row-2 {
 			flex-direction: column;
-			margin-top: 50px;
+			margin-top: 5rem;
 			padding: 0;
 
 			&_col {
 
 				&-1 {
-					margin-top: 1rem;
+					
 				}
 
 				&-2 {
-					margin-top: 1rem;
+					margin-top: 1.5rem;
 				}
 
 				&-3 {
-					margin-top: 1rem;
+					margin-top: 2rem;
 				}
 			}
 
@@ -122,6 +98,8 @@
 			}
 		}
 	}
+
+	// why our agency
 
 	.why-our-agency {
 	flex-direction: column;
@@ -140,7 +118,13 @@
 		}
 	}
 
+	// .our-services
+
 	.our-services {
+
+		&_wrap_describe:nth-child(2) i {
+			margin: 1.5rem 2rem 0;
+		}
 
 		&_row-2 {
 			padding: 1rem 0 0;
@@ -148,18 +132,23 @@
 		}
 	}
 
+	// testimonials
 
 	.testimonials {
-		width: 100%;
+		width: 100vw;
+		overflow: hidden;
+		padding: 0 1rem;
 
 		&_row-2 {
 
 			padding: 4rem 0;
 
 			.wrap-slider {
-				width: 100%;
-				margin: 0;
+				max-width: 100%;
+				margin: auto;
 			}
+
+			
 
 			&_review {
 				padding: 3rem 1rem;
@@ -201,6 +190,8 @@
 			}
 		}
 	}
+
+	// footer
 
 	.footer {
 

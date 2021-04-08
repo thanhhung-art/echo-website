@@ -213,7 +213,7 @@ body {
       .our-services_row-2_wrap-describe_col-1 {
         position: relative; }
         .our-services_row-2_wrap-describe_col-1 i {
-          padding: 2rem 1.8rem 0; }
+          margin: 1.5rem 1.7rem 0; }
         .our-services_row-2_wrap-describe_col-1::before {
           position: absolute;
           content: "";
@@ -224,7 +224,7 @@ body {
           right: 25%;
           top: 14%; }
         .our-services_row-2_wrap-describe_col-1_col-2 h4 {
-          margin: 15px 0 5px;
+          margin: 1rem 0 5px;
           font-weight: bold;
           font-size: 2rem; }
         .our-services_row-2_wrap-describe_col-1_col-2 p {
@@ -319,28 +319,8 @@ body {
   .btn {
     padding: 1rem 1.6rem;
     font-size: 1rem; }
-  .btn-primary {
-    background-color: #081158;
-    border: 1px solid #081158;
-    cursor: pointer; }
-  .btn-primary:hover {
-    background-color: #fff;
-    color: #081158; }
-  .btn-how-we-work {
-    outline: none;
-    background: #081158;
-    color: #fff;
-    cursor: pointer; }
   .btn-contact-us {
-    border: 1px solid #081158;
-    outline: none;
-    background: #fff;
-    color: #081158;
-    margin-left: 10px;
-    cursor: pointer; }
-  .btn-contact-us:hover {
-    background: #081158;
-    color: #fff; }
+    margin-left: 10px; }
   .sub-heading {
     padding: .4rem 1rem;
     font-size: .7rem; }
@@ -364,14 +344,12 @@ body {
     margin-top: 2rem; }
     .our-features_row-2 {
       flex-direction: column;
-      margin-top: 50px;
+      margin-top: 5rem;
       padding: 0; }
-      .our-features_row-2_col-1 {
-        margin-top: 1rem; }
       .our-features_row-2_col-2 {
-        margin-top: 1rem; }
+        margin-top: 1.5rem; }
       .our-features_row-2_col-3 {
-        margin-top: 1rem; }
+        margin-top: 2rem; }
       .our-features_row-2 p {
         max-width: 300px; }
   .why-our-agency {
@@ -383,16 +361,20 @@ body {
       flex-basis: 100%; }
     .why-our-agency button {
       margin-top: 2rem; }
+  .our-services_wrap_describe:nth-child(2) i {
+    margin: 1.5rem 2rem 0; }
   .our-services_row-2 {
     padding: 1rem 0 0;
     grid-template-columns: auto; }
   .testimonials {
-    width: 100%; }
+    width: 100vw;
+    overflow: hidden;
+    padding: 0 1rem; }
     .testimonials_row-2 {
       padding: 4rem 0; }
       .testimonials_row-2 .wrap-slider {
-        width: 100%;
-        margin: 0; }
+        max-width: 100%;
+        margin: auto; }
       .testimonials_row-2_review {
         padding: 3rem 1rem; }
         .testimonials_row-2_review_text blockquote {
