@@ -3,7 +3,8 @@
 
 body {
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
 
 .wrap-page {
   width: 1300px;
@@ -51,7 +52,7 @@ body {
 
 .arrow-symbol {
   position: relative;
-  padding-right: 15px; }
+  padding-right: 1rem; }
 
 .arrow-symbol:after {
   position: absolute;
@@ -78,8 +79,8 @@ body {
 
 .text {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-  line-height: 1.2; }
+  font-size: .9rem;
+  line-height: 1.5; }
 
 .our-features_text {
   max-width: 500px;
@@ -120,7 +121,7 @@ body {
         background: #fff;
         border-radius: 3px;
         margin: 2px 0 0;
-        min-width: 100px;
+        min-width: 9rem;
         display: none;
         color: #212529; }
         .navbar_menu_links .wrap-links li ul li:nth-child(2) {
@@ -137,7 +138,7 @@ body {
             visibility: visible; }
           .navbar_menu_links .wrap-links li ul li ul {
             visibility: hidden;
-            margin-left: 131%;
+            margin-left: 121%;
             margin-top: -1rem; }
   .navbar_menu_links .main-links {
     list-style-type: none;
@@ -169,7 +170,7 @@ body {
     padding: 0 4rem; }
     .our-features_row-2_col-1_icons {
       position: relative;
-      padding-top: 10px; }
+      padding-top: 1rem; }
       .our-features_row-2_col-1_icons::before {
         position: absolute;
         content: "";
@@ -185,7 +186,7 @@ body {
 .why-our-agency {
   display: flex;
   justify-content: space-between;
-  padding: 13rem 0; }
+  padding: 17rem 0; }
   .why-our-agency_col-1 {
     flex-basis: 55%; }
   .why-our-agency_col-2 {
@@ -193,7 +194,7 @@ body {
   .why-our-agency p {
     margin: 20px 0; }
   .why-our-agency button {
-    margin-top: 4.5rem;
+    margin-top: 2.5rem;
     color: #fff; }
 
 .our-services {
@@ -213,7 +214,7 @@ body {
       .our-services_row-2_wrap-describe_col-1 {
         position: relative; }
         .our-services_row-2_wrap-describe_col-1 i {
-          margin: 1.5rem 1.7rem 0; }
+          padding: 2.3rem 1.7rem 0; }
         .our-services_row-2_wrap-describe_col-1::before {
           position: absolute;
           content: "";
@@ -225,7 +226,7 @@ body {
           top: 14%; }
         .our-services_row-2_wrap-describe_col-1_col-2 h4 {
           margin: 1rem 0 5px;
-          font-weight: bold;
+          font-weight: 600;
           font-size: 2rem; }
         .our-services_row-2_wrap-describe_col-1_col-2 p {
           margin: 0; }
@@ -266,7 +267,7 @@ body {
             border-radius: 50%; }
         .testimonials_row-2_review_author_info h3 {
           margin: 0;
-          font-weight: 100; }
+          font-weight: 600; }
         .testimonials_row-2_review_author_info p {
           margin: 5px 0 0; }
 
