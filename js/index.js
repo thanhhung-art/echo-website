@@ -46,8 +46,8 @@ $(document).ready(
 let openMenu = document.getElementById("button-open-menu");
 let closeMenu = document.getElementById("button-close-menu");
 let navbarMobile = document.getElementById("navbar-mobile");
-let openSubmenu1 = document.getElementsByClassName("submenu");
-let openSubmenu2 = document.getElementById("submenu-2");
+let submenu = document.getElementById("submenu");
+let submenu2 = document.getElementById("submenu-2");
 
 function handleOpen (){
 	navbarMobile.style.right = "0";
@@ -58,14 +58,19 @@ function handleClose () {
 }
 
 function handleSubmenu () {
-	for(let i of openSubmenu1){
-		i.addEventListener("click",() => {
-			if( this.nextElementSibling.style.display === "none"){
-				this.nextElementSibling.style.display = "block";
-			}
-			else{
-				this.nextElementSibling.style.display = "none";
-			}
-		})
+	if(submenu.nextElementSibling.style.display === "none"){
+		submenu.nextElementSibling.style.display = "block";
+	}
+	else{
+		submenu.nextElementSibling.style.display = "none";
+	}
+}
+
+function handleSubmenu2 () {
+	if(submenu2.nextElementSibling.style.display === "none"){
+		submenu2.nextElementSibling.style.display = "block";
+	}
+	else{
+		submenu2.nextElementSibling.style.display = "none";
 	}
 }
