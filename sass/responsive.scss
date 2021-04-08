@@ -13,7 +13,7 @@
 	// style-btn
 
 	.btn {
-	padding: 1rem 1.6rem;
+	padding: .8rem 1.3rem;
 	font-size: 1rem;
 	}
 
@@ -31,9 +31,15 @@
 
 	.main-heading {
 		font-size: 1.9rem;
+		font-weight: 500;
 	}
 	
 	// navbar
+
+	.menu-button {
+		display: inline-block;
+
+	}
 		
 	.navbar {
 
@@ -63,6 +69,7 @@
 
 			&_right {
 				flex-basis: 100%;
+				padding-top: 1rem;
 			}
 		}
 	}
@@ -95,6 +102,7 @@
 
 			p {
 				max-width: 300px;
+				margin: auto;
 			}
 		}
 	}

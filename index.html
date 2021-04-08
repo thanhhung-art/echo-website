@@ -7,6 +7,8 @@
     <title>Echo website</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
@@ -18,13 +20,50 @@
 
     	<!-- Header -->
 
+        <div id="navbar-mobile">
+
+            <img src="images/close.jpeg" alt="" width="25" height="25" id="button-close-menu" onclick="handleClose()">
+
+            <ul>
+                <li><a href="">Home</a></li>
+                <li>
+                    <a href="">Dropdown</a>
+                    <span class="submenu" ><i class="fas fa-angle-down"></i></span>
+                    <ul>
+                        <li><a href="">menu 1</a></li>
+                        <li>
+                            <a href="">menu 2</a>
+                            <span class="submenu"><i class="fas fa-angle-down"></i></span>
+                            <ul>
+                                <li><a href="">submenu 1</a></li>
+                                <li><a href="">submenu 2</a></li>
+                                <li><a href="">submenu 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">menu 3</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Download now</a></li>
+            </ul>
+        </div>
+
     	<div class="header">
     		<div class="navbar">
 	        	<div class="navbar_logo">
 	        		<a href="#">ECHO</a>
 	        	</div>
+                <div class="menu-button" onclick="handleOpen()">
+                        <img src="images/menu.png" alt="" width="30" height="30" id="button-open-menu">
+                </div>
 	        	<div class="navbar_menu">
+
 	        		<div class="navbar_menu_links">
+
 	        			<ul class="wrap-links">
 	        				<li><a class="main-links">Home</a></li>
 	        				<li>

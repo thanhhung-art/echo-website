@@ -1,5 +1,59 @@
 @import "color";
 
+#navbar-mobile {
+
+	position: absolute;
+	width: 250px;
+	right: -270px;
+	background-color: $--white;
+	height: 100%;
+	box-shadow: -2px 0px 8px $--text;
+	padding-right: 1rem;
+	position: fixed;
+	z-index: 2;
+	transition: all .5s;
+
+	img {
+		position: absolute;
+		right: 1.7rem;
+		top: 2rem;
+	}
+
+	ul {
+		list-style-type: none;
+		padding-top: 1.7rem;
+
+		li {
+
+			span {
+				position: absolute;
+				right: 3rem;
+			}
+
+			a {
+				text-decoration: none;
+				color: $--text;
+				font-size: .8rem;
+			}
+
+			ul {
+				padding-top: 0;
+				display: none;
+			}
+		}
+	}
+}
+
+.menu-button {
+	display: none;
+	position: absolute;
+	right: 0;
+
+	img {
+		padding: 1rem 0;
+	}
+}
+
 .navbar {
 	display: flex;
 	justify-content: space-between;

@@ -40,3 +40,32 @@ $(document).ready(
   		]
  })	
 );
+
+// control menu mobile
+
+let openMenu = document.getElementById("button-open-menu");
+let closeMenu = document.getElementById("button-close-menu");
+let navbarMobile = document.getElementById("navbar-mobile");
+let openSubmenu1 = document.getElementsByClassName("submenu");
+let openSubmenu2 = document.getElementById("submenu-2");
+
+function handleOpen (){
+	navbarMobile.style.right = "0";
+}
+
+function handleClose () {
+	navbarMobile.style.right = "-270px";
+}
+
+function handleSubmenu () {
+	for(let i of openSubmenu1){
+		i.addEventListener("click",() => {
+			if( this.nextElementSibling.style.display === "none"){
+				this.nextElementSibling.style.display = "block";
+			}
+			else{
+				this.nextElementSibling.style.display = "none";
+			}
+		})
+	}
+}
