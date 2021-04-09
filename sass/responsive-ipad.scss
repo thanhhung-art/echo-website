@@ -1,0 +1,190 @@
+@import "color";
+
+@media screen and (max-width: 1300px) and (min-width : 700px){
+
+	.wrap-page {
+		max-width: 100%;
+		padding: 0 2rem;
+	}
+
+	.text {
+		font-size: 1.1rem;
+	}
+
+	// style-btn
+
+	.btn-contact-us {
+		margin-left: 10px;
+	}
+
+
+	// style-heading
+
+	.sub-heading {
+	padding: .4rem 1rem;
+	font-size: .8rem;
+	}
+
+	.main-heading {
+		font-size: 2rem;
+		font-weight: 600;
+	}
+	
+	// navbar
+
+	.menu-button {
+		display: inline-block;
+	}
+		
+	.navbar {
+
+		&_logo {
+		
+
+		a {
+			font-size: 2rem;
+		}
+		
+
+	}
+
+		&_menu {
+
+			&_links {
+				display: none;
+			}
+		}
+	}
+
+	#navbar-mobile {
+
+		ul {
+
+			li {
+
+				a {
+					text-decoration: none;
+					color: $--text;
+					font-size: 1.2rem;
+				}
+
+			}
+		}
+	}
+
+	// header
+
+	.header {
+		padding-top: 2rem;
+
+		&_content {
+			flex-direction: column;
+			transform: none;
+			margin: 5rem 0;
+
+			&_left {
+				flex-basis: 100%;
+				padding: 0;
+			}
+
+			&_right {
+				flex-basis: 100%;
+				padding-top: 1rem;
+			}
+		}
+	}
+
+	// our features
+
+	.our-features {
+
+	&_text {
+		max-width: 80%;
+	}
+
+	&_row-2 {
+		flex-direction: column;
+		margin-top: 5rem;
+		padding: 0 2rem;
+
+		&_col-1 {
+
+			&_icons {
+
+				&::before {
+					right: 47%;
+				}
+			}
+		}
+
+		p {
+			max-width: 80%;
+			margin: auto;
+		}
+	}
+}
+
+// why our agency
+
+	.why-our-agency {
+	flex-direction: column;
+	padding: 10rem 0;
+
+		&_col-1 {
+			flex-basis: 100%;
+		}
+
+		&_col-2 {
+			flex-basis: 100%;
+		}
+
+		button {
+			margin-top: 2rem;
+		}
+	}
+
+	// .our-services
+
+	.our-services {
+
+		&_wrap_describe:nth-child(2) i {
+			margin: 1.5rem 2rem 0;
+		}
+
+		&_row-2 {
+			padding: 1rem 0 0;
+			grid-template-columns: auto;
+		}
+	}
+
+	// footer
+
+	.footer {
+
+	&_row-1 {
+		flex-wrap: wrap;
+
+		&_about {
+			flex-basis: 50%;
+			padding-right: 0;
+
+			p {
+				max-width: 450px;
+			}
+		}
+
+		&_pages {
+			flex-basis: 50%;
+		}
+
+		&_resources {
+			flex-basis: 50%;
+		}
+
+		&_contact {
+			flex-basis: 50%;
+		}
+	}
+}
+
+}

@@ -10,16 +10,17 @@ $(document).ready(
         autoplaySpeed: 2000,
     	responsive: [
 		    {
-		      breakpoint: 1024,
+		      breakpoint: 1366,
 		      settings: {
 		        slidesToShow: 2,
 		        slidesToScroll: 1,
 		        infinite: true,
-		        dots: true
+		        dots: true,
+		        arrows: false,
 		      }
 		    },
 		    {
-		      breakpoint: 600,
+		      breakpoint: 640,
 		      settings: {
 		        slidesToShow: 1,
 		        slidesToScroll: 1,
@@ -62,10 +63,12 @@ function handleSubmenu () {
 	if(submenu.nextElementSibling.style.height === "0px" ){
 		submenu.nextElementSibling.style.height = "80px";
 		submenu.nextElementSibling.style.opacity = "1";
+		submenu.style.transform = "rotate(180deg)";
 	}
 	else{
 		submenu.nextElementSibling.style.height = "0px";
 		submenu.nextElementSibling.style.opacity = "0";
+		submenu.style.transform = "none";
 	}
 }
 
@@ -74,11 +77,13 @@ function handleSubmenu2 () {
 		submenu2.nextElementSibling.style.height = "80px";
 		submenu2.nextElementSibling.style.opacity = "1";
 		about.style.paddingTop = "4.4rem";
+		submenu2.style.transform = "rotate(180deg)";
 
 	}
 	else{
 		submenu2.nextElementSibling.style.height = "0px";
 		submenu2.nextElementSibling.style.opacity = "0";
 		about.style.paddingTop = "0px";
+		submenu2.style.transform = "none";
 	}
 }
