@@ -118,7 +118,11 @@ body {
       font-size: .8rem; }
     #navbar-mobile ul li ul {
       padding-top: 0;
-      display: none; }
+      padding-left: 1rem;
+      height: 0;
+      opacity: 0;
+      transition: all .5s;
+      display: block; }
 
 .menu-button {
   display: none;
