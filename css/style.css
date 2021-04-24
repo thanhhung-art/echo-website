@@ -371,6 +371,9 @@ body {
     font-weight: 600; }
   .menu-button {
     display: inline-block; }
+    .menu-button img {
+      width: 2.5rem;
+      height: 2.5rem; }
   .navbar_logo a {
     font-size: 2rem; }
   .navbar_menu_links {
@@ -447,8 +450,14 @@ body {
   .main-heading {
     font-size: 1.9rem;
     font-weight: 500; }
+  #button-open-menu {
+    width: 30px;
+    height: 30px; }
   .menu-button {
     display: inline-block; }
+    .menu-button img {
+      width: 30px;
+      height: 30px; }
   .navbar_menu_links {
     display: none; }
   .header {
@@ -475,6 +484,7 @@ body {
       .our-features_row-2_col-3 {
         margin-top: 2rem; }
       .our-features_row-2 p {
+        text-align: justify;
         max-width: 300px;
         margin: auto; }
   .why-our-agency {
@@ -518,4 +528,18 @@ body {
           .testimonials_row-2_review_author_info p {
             margin: 5px 0 0; }
   .footer_row-1 {
-    flex-direction: column; } }
+    flex-direction: column;
+    padding: 4rem 0 0; }
+    .footer_row-1 h5 {
+      margin: 1rem 0; }
+    .footer_row-1 ul {
+      padding: 0;
+      margin: 1rem 0; }
+    .footer_row-1 li {
+      list-style-type: none;
+      padding-bottom: .7rem;
+      color: rgba(0, 0, 0, 0.5); }
+    .footer_row-1_about {
+      margin-bottom: 2rem; }
+  .footer_row-2 {
+    padding: 1.5rem 0 3rem; } }

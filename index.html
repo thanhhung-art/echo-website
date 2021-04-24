@@ -20,21 +20,21 @@
 
     	<!-- Header -->
 
-        <div id="navbar-mobile">
+        <div id="navbar-mobile" style="right: -270px">
 
-            <img src="images/close.jpeg" alt="" width="25" height="25" id="button-close-menu" onclick="handleClose()">
+            <img src="images/close.jpeg" alt="" width="25" height="25" id="button-close-menu" onclick="handleOpenClose()">
 
             <ul>
                 <li><a href="">Home</a></li>
                 <li>
                     <a href="">Dropdown</a>
-                    <span id="submenu" onclick="handleSubmenu()"><i class="fas fa-angle-down"></i></span>
-                    <ul>
+                    <span class="open-submenu" onclick="handleSubMenu(0)"><i class="fas fa-angle-down"></i></span>
+                    <ul style="height: 0px;">
                         <li><a href="">menu 1</a></li>
                         <li>
                             <a href="">menu 2</a>
-                            <span id="submenu-2" onclick="handleSubmenu2()"><i class="fas fa-angle-down"></i></span>
-                            <ul>
+                            <span class="open-submenu" onclick="handleSubMenu(1)"><i class="fas fa-angle-down"></i></span>
+                            <ul style="height: 0px;">
                                 <li><a href="">submenu 1</a></li>
                                 <li><a href="">submenu 2</a></li>
                                 <li><a href="">submenu 3</a></li>
@@ -57,8 +57,8 @@
 	        	<div class="navbar_logo">
 	        		<a href="#">ECHO</a>
 	        	</div>
-                <div class="menu-button" onclick="handleOpen()">
-                        <img src="images/menu.png" alt="" width="50" height="50" id="button-open-menu">
+                <div class="menu-button" onclick="handleOpenClose()" >
+                        <img src="images/menu.png" id="button-open-menu">
                 </div>
 	        	<div class="navbar_menu">
 

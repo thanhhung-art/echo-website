@@ -36,8 +36,18 @@
 	
 	// navbar
 
+	#button-open-menu {
+		width: 30px;
+		height: 30px;
+	}
+
 	.menu-button {
 		display: inline-block;
+
+		img {
+			width: 30px;
+			height: 30px;
+		}
 
 	}
 		
@@ -86,10 +96,6 @@
 
 			&_col {
 
-				&-1 {
-					
-				}
-
 				&-2 {
 					margin-top: 1.5rem;
 				}
@@ -101,6 +107,7 @@
 
 
 			p {
+				text-align: justify;
 				max-width: 300px;
 				margin: auto;
 			}
@@ -202,9 +209,32 @@
 	// footer
 
 	.footer {
-
 		&_row-1 {
 			flex-direction: column;
+			padding: 4rem 0 0;
+			
+			h5 {
+				margin: 1rem 0;
+			}
+	
+			ul {
+				padding: 0;
+				margin: 1rem 0;
+			}
+	
+			li {
+				list-style-type: none;
+				padding-bottom: .7rem;
+				color: $--text;
+			}
+	
+			&_about {
+				margin-bottom: 2rem;
+			}
+		}
+
+		&_row-2 {
+			padding: 1.5rem 0 3rem;
 		}
 	}
 }

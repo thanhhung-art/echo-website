@@ -35,55 +35,40 @@ $(document).ready(
 		        arrows: false,
 		      }
 		    }
-		    // You can unslick at a given breakpoint now by adding:
-		    // settings: "unslick"
-		    // instead of a settings object
   		]
  })	
 );
 
 // control menu mobile
 
-let openMenu = document.getElementById("button-open-menu");
-let closeMenu = document.getElementById("button-close-menu");
 let navbarMobile = document.getElementById("navbar-mobile");
-let submenu = document.getElementById("submenu");
-let submenu2 = document.getElementById("submenu-2");
-let about = document.getElementById("about");
+let subMenus = document.getElementsByClassName("open-submenu");
 
-function handleOpen (){
-	navbarMobile.style.right = "0";
-}
-
-function handleClose () {
-	navbarMobile.style.right = "-270px";
-}
-
-function handleSubmenu () {
-	if(submenu.nextElementSibling.style.height === "0px" ){
-		submenu.nextElementSibling.style.height = "80px";
-		submenu.nextElementSibling.style.opacity = "1";
-		submenu.style.transform = "rotate(180deg)";
+function handleOpenClose (){
+	if( navbarMobile.style.right === "-270px" ){
+		navbarMobile.style.right = "0px"
 	}
-	else{
-		submenu.nextElementSibling.style.height = "0px";
-		submenu.nextElementSibling.style.opacity = "0";
-		submenu.style.transform = "none";
+	else {
+		navbarMobile.style.right = "-270px"
 	}
 }
 
-function handleSubmenu2 () {
-	if(submenu2.nextElementSibling.style.height === "0px" ){
-		submenu2.nextElementSibling.style.height = "80px";
-		submenu2.nextElementSibling.style.opacity = "1";
-		about.style.paddingTop = "4.4rem";
-		submenu2.style.transform = "rotate(180deg)";
+function handleSubMenu(e) {
 
-	}
-	else{
-		submenu2.nextElementSibling.style.height = "0px";
-		submenu2.nextElementSibling.style.opacity = "0";
-		about.style.paddingTop = "0px";
-		submenu2.style.transform = "none";
-	}
+		if(subMenus[e].nextElementSibling.style.height === "0px"){
+			subMenus[e].nextElementSibling.style.height = "80px";
+			subMenus[e].nextElementSibling.style.opacity = "1";
+			subMenus[e].style.transform = "rotate(180deg)";
+			if(e === 1){
+				subMenus[0].nextElementSibling.style.height = "160px";
+			}
+		}
+		else {
+			subMenus[e].nextElementSibling.style.height = "0px";
+			subMenus[e].nextElementSibling.style.opacity = "0";
+			subMenus[e].style.transform = "none";
+			if(e === 1){
+				subMenus[0].nextElementSibling.style.height = "80px";
+			}
+		}
 }
