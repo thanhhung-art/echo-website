@@ -43,6 +43,8 @@
 
 	.menu-button {
 		display: inline-block;
+		position: absolute;
+		right: 0;
 
 		img {
 			width: 30px;
@@ -52,6 +54,7 @@
 	}
 		
 	.navbar {
+		position: relative;
 
 		&_menu {
 

@@ -3,8 +3,8 @@
 @media screen and (max-width: 1300px) and (min-width : 700px){
 
 	.wrap-page {
-		max-width: 100%;
-		padding: 0 2rem;
+		max-width: 90%;
+		margin: 0 auto;
 	}
 
 	.text {
@@ -34,6 +34,8 @@
 
 	.menu-button {
 		display: inline-block;
+		position: absolute;
+		right: 0px;
 
 		img {
 			width: 2.5rem;
@@ -42,12 +44,13 @@
 	}
 		
 	.navbar {
+		display: flex;
+		position: relative;
 
 		&_logo {
-		
 
 		a {
-			font-size: 2rem;
+			font-size: 1.5rem;
 		}
 		
 

@@ -48,26 +48,16 @@
 	}
 }
 
-.hide {
-	
-}
-
 .menu-button {
 	display: none;
-	position: absolute;
-	right: 0;
-
-	img {
-		padding: 1rem 0;
-	}
 }
 
 .navbar {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 
 	&_logo {
-		padding: 13px 0;
 
 		a {
 			font-size: 1.3rem;
