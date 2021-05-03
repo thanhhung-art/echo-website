@@ -56,11 +56,11 @@ function handleOpenClose (){
 function handleSubMenu(e) {
 
 		if(subMenus[e].nextElementSibling.style.height === "0px"){
-			subMenus[e].nextElementSibling.style.height = "80px";
+			subMenus[e].nextElementSibling.style.height = "auto";
 			subMenus[e].nextElementSibling.style.opacity = "1";
 			subMenus[e].style.transform = "rotate(180deg)";
 			if(e === 1){
-				subMenus[0].nextElementSibling.style.height = "160px";
+				subMenus[0].nextElementSibling.style.height = "auto";
 			}
 		}
 		else {
@@ -68,7 +68,7 @@ function handleSubMenu(e) {
 			subMenus[e].nextElementSibling.style.opacity = "0";
 			subMenus[e].style.transform = "none";
 			if(e === 1){
-				subMenus[0].nextElementSibling.style.height = "80px";
+				subMenus[0].nextElementSibling.style.height = "auto";
 			}
 		}
 }
